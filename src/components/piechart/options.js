@@ -7,24 +7,24 @@ const options = {
     title: {
         text: 'Pie point CSS'
     },
-
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    },
-
     series: [{
         type: 'pie',
         allowPointSelect: true,
         keys: ['name', 'y', 'selected', 'sliced'],
         data: [
-            ['Apples', 29.9, false],
-            ['Pears', 71.5, false],
-            ['Oranges', 106.4, false],
-            ['Plums', 129.2, false],
-            ['Bananas', 144.0, false],
-            ['Peaches', 176.0, false],
-            ['Prunes', 135.6, true, true],
-            ['Avocados', 148.5, false]
+            // ['BASIC'	2456, false]
+            // ['COBOL', 616, false],
+            ['Ruby', 3217, false],
+            // ['Rust', 518, false],
+            ['R', 12020, false],
+            ['Objective-C', 813, false],
+            // ['Nim', 260, false],
+            ['C#', 21268, false],
+            ['Python', 11352, false],
+            ['JavaScript', 11450, true, true],
+            ['Java', 17355, false],
+            // ['Julia', 260, false],
+            ['Go', 1276, false],
         ],
         showInLegend: true
     }],
