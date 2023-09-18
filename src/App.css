@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
   }
 }
 
-@import "highcharts/css/highcharts.css";
+/* @import "highcharts/css/highcharts.css"; */
 
 #container {
     height: 400px;
@@ -57,6 +57,13 @@
     stroke-width: 2px;
 }
 
-.highcharts-background {
+/* .highcharts-background {
   fill: #282c34;
+} */
+/* .highcharts-background {
+  fill: #fefefe;
+} */
+#container {
+  height: 500px;
+  width: 500px;
 }

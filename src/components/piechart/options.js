@@ -1,11 +1,9 @@
 const options = {
-
-    chart: {
-        styledMode: true
-    },
-
+    // chart: { // to be used with highcharts.css
+    //     styledMode: true
+    // },
     title: {
-        text: 'Pie point CSS'
+        text: 'Programming Languages usage statistics'
     },
     series: [{
         type: 'pie',
@@ -28,6 +26,9 @@ const options = {
         ],
         showInLegend: true
     }],
+    tooltip: {
+        backgroundColor: '#ffffff'
+    },
     credits: false
 }
 
