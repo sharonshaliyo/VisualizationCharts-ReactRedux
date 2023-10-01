@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import AllCharts from '../components/index'
+import ChartsCollection from '../components/index'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <AllCharts />
+        <ChartsCollection />
       </header>
     </div>
   );
