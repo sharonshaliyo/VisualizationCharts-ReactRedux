@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Piechart from './components/piechart/index'
+import AllCharts from '../components/index'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Piechart />
+        <AllCharts />
       </header>
     </div>
   );
