@@ -1,26 +1,18 @@
 import React, { useRef, useLayoutEffect } from 'react'
-import Highcharts from 'highcharts'
 
 import options from './options'
 import buildTooltipOptions from './options/tooltipOptions'
 import buildLegendOptions from './options/legendOptions'
-
-const renderHighChartRef = (element) => {
-    Highcharts.chart({
-        ...options,
-        chart: {
-            ...options.chart,
-            renderTo: element
-        },
-        tooltip: buildTooltipOptions(),
-        legend: buildLegendOptions()
-    })
-}
+import { renderChartOnElement } from '../allCharts'
 
 const Piechart = () => {
     const containerRef = useRef(null)
     useLayoutEffect(() => {
-        renderHighChartRef(containerRef.current)
+        renderChartOnElement(containerRef.current, {
+            defaultOptions: options,
+            tooltipOptions: buildTooltipOptions(),
+            legendOptions: buildLegendOptions()
+        })
     })
 
     return <div ref={containerRef}></div>
