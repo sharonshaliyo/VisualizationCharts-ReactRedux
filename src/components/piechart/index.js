@@ -1,6 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react'
 
-import options from './options'
+import defaultOptions from './options/defaultOptions'
 import buildTooltipOptions from './options/tooltipOptions'
 import buildLegendOptions from './options/legendOptions'
 import { renderChartOnElement } from '../allCharts'
@@ -9,7 +9,7 @@ const Piechart = () => {
     const containerRef = useRef(null)
     useLayoutEffect(() => {
         renderChartOnElement(containerRef.current, {
-            defaultOptions: options,
+            defaultOptions,
             tooltipOptions: buildTooltipOptions(),
             legendOptions: buildLegendOptions()
         })
