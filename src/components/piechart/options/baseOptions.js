@@ -2,6 +2,7 @@ const options = {
     // chart: { // to be used with highcharts.css
     //     styledMode: true
     // },
+    chart: {},
     accessibility: {
         enabled: false
     },

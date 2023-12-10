@@ -33,6 +33,7 @@ const options = {
             name: "Browsers",
             colorByPoint: true,
             type: 'column',
+            showInLegend: true,
             data: [
                 {
                     name: 'Chrome',

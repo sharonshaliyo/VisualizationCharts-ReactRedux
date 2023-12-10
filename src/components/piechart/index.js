@@ -9,9 +9,9 @@ const Piechart = () => {
     const containerRef = useRef(null)
     useLayoutEffect(() => {
         renderChartOnElement(containerRef.current, {
-            baseOptions,
-            tooltipOptions: selectThemeTooltipOptions('default'),
-            legendOptions: selectThemeLegendOptions('default')
+            ...baseOptions,
+            tooltip: selectThemeTooltipOptions('default'),
+            legend: selectThemeLegendOptions('default')
         })
     })
 
