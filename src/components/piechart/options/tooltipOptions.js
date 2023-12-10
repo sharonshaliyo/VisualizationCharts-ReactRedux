@@ -1,3 +1,5 @@
+// import { theme } from "highcharts"
+
 const buildTooltipOptions = () => {
     return {
         backgroundColor: {
@@ -12,4 +14,17 @@ const buildTooltipOptions = () => {
     }
 }
 
-export default buildTooltipOptions
+const defaultTooltipOptions = buildTooltipOptions()
+
+export const selectThemeTooltipOptions = themeName => {
+    const optionSelector = {
+        light: themeDetails => { },
+        dark: themeDetails => { },
+        default: () => {
+            return defaultTooltipOptions
+        }
+    }
+    return optionSelector[themeName]()
+}
+
+export default defaultTooltipOptions
