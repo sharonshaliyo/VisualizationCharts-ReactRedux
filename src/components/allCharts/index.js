@@ -1,15 +1,12 @@
 import Highcharts from 'highcharts'
 
 export const renderChartOnElement = (element, options) => {
-    const { defaultOptions, tooltipOptions, legendOptions } = options
-    Highcharts.chart({
-        ...defaultOptions,
+    const composedOptions = {
+        ...options,
         chart: {
-            ...defaultOptions.chart,
+            ...options.chart,
             renderTo: element
-        },
-        tooltip: tooltipOptions,
-        legend: legendOptions
-    })
+        }
+    }
+    Highcharts.chart(composedOptions)
 }
-

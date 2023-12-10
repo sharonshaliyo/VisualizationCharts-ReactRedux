@@ -6,8 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ChartsCollection />
+        Visualization Charts
       </header>
+      <ChartsCollection />
     </div>
   );
 }

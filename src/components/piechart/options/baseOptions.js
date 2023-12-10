@@ -2,8 +2,16 @@ const options = {
     // chart: { // to be used with highcharts.css
     //     styledMode: true
     // },
+    accessibility: {
+        enabled: false
+    },
     title: {
-        text: 'Programming Languages usage statistics'
+        text: 'Pie Chart',
+        align: 'left'
+    },
+    subtitle: {
+        text: 'Usage statistics',
+        align: 'left'
     },
     series: [{
         type: 'pie',
@@ -13,7 +21,7 @@ const options = {
             // ['BASIC'	2456, false]
             // ['COBOL', 616, false],
             ['Ruby', 3217, false],
-            // ['Rust', 518, false],
+            ['Rust', 518, false],
             ['R', 12020, false],
             ['Objective-C', 813, false],
             // ['Nim', 260, false],
