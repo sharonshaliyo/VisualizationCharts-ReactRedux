@@ -6,7 +6,7 @@ const options = {
         zoomType: 'xy'
     },
     title: {
-        text: 'Browser Market Share Worldwide',
+        text: 'Column Chart',
         align: 'left'
     },
     subtitle: {

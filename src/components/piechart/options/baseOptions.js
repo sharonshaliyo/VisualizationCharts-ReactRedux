@@ -2,12 +2,11 @@ const options = {
     // chart: { // to be used with highcharts.css
     //     styledMode: true
     // },
-    chart: {},
     accessibility: {
         enabled: false
     },
     title: {
-        text: 'Programming Languages',
+        text: 'Pie Chart',
         align: 'left'
     },
     subtitle: {

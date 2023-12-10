@@ -10,6 +10,10 @@ const Piechart = () => {
     useLayoutEffect(() => {
         renderChartOnElement(containerRef.current, {
             ...baseOptions,
+            title: {
+                ...baseOptions.title,
+                text: 'Programming Languages'
+            },
             tooltip: selectThemeTooltipOptions('default'),
             legend: selectThemeLegendOptions('default')
         })

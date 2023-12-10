@@ -7,7 +7,11 @@ const ColumnChart = () => {
   const containerRef = useRef(null)
   useLayoutEffect(() => {
     renderChartOnElement(containerRef.current, {
-      ...baseOptions
+      ...baseOptions,
+      title: {
+        ...baseOptions.title,
+        text: 'Browser Market Share Worldwide'
+      }
     })
   })
 
